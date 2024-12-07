@@ -1,14 +1,12 @@
-const mongoose = require('mongoose');
+require('dotenv').config(); // Load .env variables
+const mongoose = require('mongoose'); // Import mongoose
 
 const connectDB = async () => {
     try {
-        await mongoose.connect('mongodb://127.0.0.1:27017/portfolioDB', {
-            useNewUrlParser: true,
-            useUnifiedTopology: true,
-        });
-        console.log('MongoDB connected successfully!');
-    } catch (err) {
-        console.error('MongoDB connection failed:', err.message);
+        const conn = await mongoose.connect('mongodb://localhost:27017/portfolioDB'); // No options needed
+        console.log(`MongoDB Connected: ${conn.connection.host}`);
+    } catch (error) {
+        console.error(`Error: ${error.message}`);
         process.exit(1); // Exit process with failure
     }
 };

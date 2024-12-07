@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Portfolio</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Add Portfolio</h1>
+    <form action="/portfolio/add" method="POST">
+        <label>Title:</label>
+        <input type="text" name="title" required>
+        <label>Description:</label>
+        <textarea name="description" required></textarea>
+        <label>Image URL:</label>
+        <input type="text" name="image">
+        <button type="submit">Add</button>
+    </form>
+    <a href="/">Back to Portfolio</a>
+</body>
+</html>
