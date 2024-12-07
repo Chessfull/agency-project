@@ -7,3 +7,13 @@
 A simple portfolio website built using **Node.js**, **Express.js**, and **EJS**. 
 
 The project includes a MongoDB integration and serves as an example of a responsive and modern portfolio design includes MongoDB integration for future dynamic data handling.
+
+### :incoming_envelope: Contact Information :incoming_envelope:
+
+For any questions or further information, please don't hesitate to contact me :pray:
+
+Email: merttopcu.dev@gmail.com
+
+LinkedIn: https://www.linkedin.com/in/mert-topcu/
+
+Happy Coding ❤️
